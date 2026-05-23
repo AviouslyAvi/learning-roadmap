@@ -1,0 +1,13 @@
+.DS_Store
+.claude/settings.local.json
+*.local.md
+
+# Active session state — noisy, not useful in public history.
+# Archived handoffs (05-handoffs/archive/) DO ship.
+05-handoffs/active/
+
+# Local-only Terraform state
+**/.terraform/
+**/terraform.tfstate
+**/terraform.tfstate.backup
+**/*.tfvars
