@@ -30,7 +30,7 @@ For the full picture, see [00-foundation/](00-foundation/).
 ## Weekly log
 
 <!-- WEEKLY_LOG_START -->
-*The nightly job will populate this section every Sunday. Until then, see `02-notes/` for daily activity.*
+- **Week 2026-21** — Inaugural week: scaffolded the public roadmap repo, four parallel General Research workspaces, and consolidated VPS / self-hosting research. → [full digest](06-weekly/2026-21.md)
 <!-- WEEKLY_LOG_END -->
 
 For older weeks, see [06-weekly/](06-weekly/).
