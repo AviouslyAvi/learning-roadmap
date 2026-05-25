@@ -10,11 +10,11 @@ One short `.md` per topic.
 
 Current cheatsheets:
 - [screen.md](screen.md) — GNU `screen` session/window/split quick ref
+- [ubuntu-server.md](ubuntu-server.md) — Ubuntu server admin: files, perms, systemd, networking, ssh, scp/rsync, apt, ufw, security
 
 Planned:
 - `git.md` — git command quick ref
 - `terraform.md` — terraform CLI quick ref
-- `linux-permissions.md`
 
 ## Files to load
 
