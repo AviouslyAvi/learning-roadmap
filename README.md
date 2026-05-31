@@ -30,6 +30,7 @@ For the full picture, see [00-foundation/](00-foundation/).
 ## Weekly log
 
 <!-- WEEKLY_LOG_START -->
+- **Week 2026-22** — Watch-Party shipping sprint (v0.5.0 → v0.8.1, seven releases) bracketed by a Terraform learning sprint (LocalStack S3 lab, Docker + general sandboxes, new cheatsheet). → [full digest](06-weekly/2026-22.md)
 - **Week 2026-21** — Inaugural week: scaffolded the public roadmap repo, four parallel General Research workspaces, and consolidated VPS / self-hosting research. → [full digest](06-weekly/2026-21.md)
 <!-- WEEKLY_LOG_END -->
 
