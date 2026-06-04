@@ -1,0 +1,14 @@
+# Copy this file to terraform.tfvars and fill in your real values.
+# terraform.tfvars is gitignored — your token never gets committed.
+
+# Hetzner Cloud API token. Generate at:
+#   Hetzner Cloud Console → your project → Security → API Tokens → Generate
+#   Permission: Read & Write
+hcloud_token = "PASTE_YOUR_TOKEN_HERE"
+
+# Optional overrides (defaults shown):
+# project             = "tf-sandbox"
+# ssh_public_key_path = "~/.ssh/id_ed25519.pub"
+# server_type         = "cx22"
+# image               = "ubuntu-24.04"
+# location            = "nbg1"
