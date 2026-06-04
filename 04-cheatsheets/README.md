@@ -10,6 +10,7 @@ One short `.md` per topic.
 
 Current cheatsheets:
 - [screen.md](screen.md) — GNU `screen` session/window/split quick ref
+- [sftp-mac-to-windows.md](sftp-mac-to-windows.md) — send files Mac → Windows via Cyberduck + OpenSSH Server
 
 Planned:
 - `git.md` — git command quick ref
