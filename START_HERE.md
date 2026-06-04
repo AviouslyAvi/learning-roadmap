@@ -45,7 +45,8 @@ A scheduled Claude Code task runs daily at 6:00 AM local time. It scans `~/Claud
 ## Active threads
 
 - 🏠 **ADHD Hub v2.1** — 4-DB Notion + additive Obsidian PARA built. User-side: Daily Notes plugin, Apple Shortcuts, n8n install, 3 Notion DB templates. See `05-handoffs/active/handoff-2026-05-22-adhd-hub-v2.md`.
+- 🎮 **Minecraft netcup** — both servers (vanilla 25565 + Arclight modded 25564) migrated off `root` onto the `mc` user + systemd (`minecraft-vanilla`, `minecraft-arclight`), 2026-05-31. See `03-projects/minecraft-netcup/`.
 
 ## Last updated
 
-2026-05-22
+2026-05-31
