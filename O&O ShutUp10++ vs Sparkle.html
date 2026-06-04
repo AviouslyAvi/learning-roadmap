@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>O&O ShutUp10++ vs Sparkle</title>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
+<style>
+  :root{
+    --bg:#0f0f0f; --panel:#181818; --panel2:#1f1f1f; --line:#2a2a2a;
+    --txt:#e8e8e8; --muted:#9a9a9a; --a:#5b9dff; --b:#ffb454;
+    --good:#5fd17a; --bad:#ff6b6b;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{background:var(--bg);color:var(--txt);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;line-height:1.55;padding:32px 18px 60px}
+  .wrap{max-width:980px;margin:0 auto}
+  h1{font-size:30px;font-weight:700;letter-spacing:-.5px}
+  h1 .vs{color:var(--muted);font-weight:400;margin:0 8px}
+  .sub{color:var(--muted);margin-top:6px;font-size:15px}
+  .legend{display:flex;gap:18px;margin:18px 0 6px;flex-wrap:wrap;font-size:13px}
+  .legend span{display:inline-flex;align-items:center;gap:7px}
+  .dot{width:11px;height:11px;border-radius:3px;display:inline-block}
+  .tabs{display:flex;gap:6px;margin:22px 0;flex-wrap:wrap;border-bottom:1px solid var(--line);padding-bottom:0}
+  .tab{background:none;border:none;color:var(--muted);padding:10px 16px;font-size:14px;cursor:pointer;border-bottom:2px solid transparent;transition:.15s}
+  .tab:hover{color:var(--txt)}
+  .tab.active{color:var(--txt);border-bottom-color:var(--a)}
+  .panel{display:none;animation:fade .25s ease}
+  .panel.active{display:block}
+  @keyframes fade{from{opacity:0;transform:translateY(4px)}to{opacity:1;transform:none}}
+  .card{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:22px;margin-bottom:18px}
+  .grid2{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+  @media(max-width:720px){.grid2{grid-template-columns:1fr}}
+  .card h3{font-size:18px;margin-bottom:12px}
+  .card.a h3{color:var(--a)} .card.b h3{color:var(--b)}
+  .kv{font-size:14px;margin:7px 0;color:var(--txt)}
+  .kv b{color:var(--muted);font-weight:600;display:inline-block;min-width:92px}
+  table{width:100%;border-collapse:collapse;font-size:14px}
+  th,td{text-align:left;padding:11px 12px;border-bottom:1px solid var(--line);vertical-align:top}
+  th{color:var(--muted);font-weight:600;font-size:12px;text-transform:uppercase;letter-spacing:.5px}
+  td:first-child{color:var(--muted);font-weight:600;width:30%}
+  .chartbox{position:relative;height:380px}
+  .note{font-size:13px;color:var(--muted);margin-top:10px}
+  .pill{display:inline-block;font-size:11px;padding:2px 9px;border-radius:20px;background:var(--panel2);border:1px solid var(--line);color:var(--muted);margin-left:8px}
+  .verdict-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+  @media(max-width:720px){.verdict-grid{grid-template-columns:1fr}}
+  .verdict-grid .card{margin:0}
+  ul.tick{list-style:none;font-size:14px}
+  ul.tick li{padding:6px 0 6px 24px;position:relative}
+  ul.tick li:before{content:"›";position:absolute;left:6px;color:var(--a)}
+  .b ul.tick li:before{color:var(--b)}
+  .foot{color:var(--muted);font-size:12.5px;margin-top:28px;border-top:1px solid var(--line);padding-top:16px}
+  .foot a{color:var(--a);text-decoration:none}
+  .yes{color:var(--good);font-weight:600} .no{color:var(--bad)} .part{color:var(--b)}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>O&amp;O ShutUp10++ <span class="vs">vs</span> Sparkle</h1>
+  <div class="sub">A focused Windows privacy toggle tool vs. an all-in-one debloat &amp; optimization suite — Windows 10/11, 2026.</div>
+
+  <div class="legend">
+    <span><i class="dot" style="background:var(--a)"></i> O&amp;O ShutUp10++</span>
+    <span><i class="dot" style="background:var(--b)"></i> Sparkle</span>
+  </div>
+
+  <div class="tabs">
+    <button class="tab active" data-t="overview">Overview</button>
+    <button class="tab" data-t="cost">Cost</button>
+    <button class="tab" data-t="cap">Capabilities</button>
+    <button class="tab" data-t="scope">Scope &amp; Safety</button>
+    <button class="tab" data-t="verdict">Verdict</button>
+  </div>
+
+  <!-- OVERVIEW -->
+  <div class="panel active" id="overview">
+    <div class="grid2">
+      <div class="card a">
+        <h3>O&amp;O ShutUp10++ <span class="pill">closed-source</span></h3>
+        <div class="kv"><b>Price</b> Free · Premium €19.90</div>
+        <div class="kv"><b>Maker</b> O&amp;O Software GmbH (Germany)</div>
+        <div class="kv"><b>Type</b> Portable, no install, ~76 MB</div>
+        <div class="kv"><b>Focus</b> 100+ Windows privacy/telemetry toggles</div>
+        <div class="kv"><b>Best for</b> Privacy purists who want a surgical, trusted antispy checklist</div>
+      </div>
+      <div class="card b">
+        <h3>Sparkle <span class="pill">open-source</span></h3>
+        <div class="kv"><b>Price</b> Free (MIT, open source)</div>
+        <div class="kv"><b>Maker</b> thedogecraft + community (getsparkle.net)</div>
+        <div class="kv"><b>Type</b> Portable or installer / PowerShell</div>
+        <div class="kv"><b>Focus</b> Debloat + privacy + performance + cleanup</div>
+        <div class="kv"><b>Best for</b> Tinkerers who want one app to slim, speed up &amp; clean Windows</div>
+      </div>
+    </div>
+
+    <div class="card">
+      <h3>At a glance</h3>
+      <table>
+        <tr><th>Dimension</th><th>O&amp;O ShutUp10++</th><th>Sparkle</th></tr>
+        <tr><td>Primary job</td><td>Privacy / telemetry hardening</td><td>Debloat + optimize + privacy</td></tr>
+        <tr><td>Privacy toggles</td><td class="yes">100+ granular</td><td class="part">Categorized, fewer but grouped</td></tr>
+        <tr><td>Remove built-in apps</td><td class="no">No</td><td class="yes">Yes (Edge, OneDrive, bloat)</td></tr>
+        <tr><td>Performance tweaks</td><td class="no">No</td><td class="yes">Yes (HPET, GPU, network)</td></tr>
+        <tr><td>Junk / cache cleaner</td><td class="no">No</td><td class="yes">Yes</td></tr>
+        <tr><td>App installer (Winget)</td><td class="no">No</td><td class="yes">Yes</td></tr>
+        <tr><td>Reversible changes</td><td class="yes">Per-toggle</td><td class="yes">Restore points + rollback</td></tr>
+        <tr><td>Auto re-apply after updates</td><td class="part">Premium only</td><td class="no">No</td></tr>
+        <tr><td>Open source / auditable</td><td class="no">No</td><td class="yes">Yes (GitHub)</td></tr>
+        <tr><td>Install required</td><td class="yes">None (portable)</td><td class="part">Portable or installer</td></tr>
+      </table>
+    </div>
+  </div>
+
+  <!-- COST -->
+  <div class="panel" id="cost">
+    <div class="card">
+      <h3>Total cost of ownership</h3>
+      <div class="chartbox"><canvas id="costChart"></canvas></div>
+      <p class="note">Both tools are free for their full core feature set. The only paid option is O&amp;O ShutUp10++ <b>Premium (€19.90, ~$22)</b>, which adds a background service that re-enforces your privacy settings after Windows updates. Sparkle is entirely free and open source with no paid tier.</p>
+    </div>
+  </div>
+
+  <!-- CAPABILITIES -->
+  <div class="panel" id="cap">
+    <div class="card">
+      <h3>Capability profile (0–100)</h3>
+      <div class="chartbox"><canvas id="radarChart"></canvas></div>
+      <p class="note">ShutUp10++ scores tall and narrow — it does one thing (privacy) extremely well. Sparkle is a broader, flatter profile: strong across debloat, performance and cleanup, with solid-but-less-exhaustive privacy. Auto-enforcement reflects ShutUp10++ <i>Premium</i>; the free tier scores ~30 there.</p>
+    </div>
+  </div>
+
+  <!-- SCOPE -->
+  <div class="panel" id="scope">
+    <div class="card">
+      <h3>What each one actually changes</h3>
+      <table>
+        <tr><th></th><th>O&amp;O ShutUp10++</th><th>Sparkle</th></tr>
+        <tr><td>Telemetry &amp; diagnostics</td><td class="yes">Deep, granular</td><td class="yes">Yes (grouped)</td></tr>
+        <tr><td>Copilot / Recall / AI</td><td class="yes">Dedicated toggles</td><td class="yes">Disable Copilot</td></tr>
+        <tr><td>Cortana / web search</td><td class="yes">Yes</td><td class="part">Partial</td></tr>
+        <tr><td>Remove Edge / OneDrive</td><td class="no">No</td><td class="yes">Yes</td></tr>
+        <tr><td>Strip preinstalled apps</td><td class="no">No</td><td class="yes">Yes (selectable)</td></tr>
+        <tr><td>Gaming / GPU / latency</td><td class="no">No</td><td class="yes">NVIDIA + HPET tweaks</td></tr>
+        <tr><td>DNS management</td><td class="no">No</td><td class="yes">Yes</td></tr>
+        <tr><td>Disk cleanup</td><td class="no">No</td><td class="yes">Yes</td></tr>
+      </table>
+      <p class="note">Rule of thumb: ShutUp10++ <b>changes settings</b>; Sparkle <b>also removes software and re-tunes the system</b>. The broader the scope, the bigger the upside — and the more there is to test before you trust it on a primary machine.</p>
+    </div>
+    <div class="grid2">
+      <div class="card a">
+        <h3>Safety posture — ShutUp10++</h3>
+        <ul class="tick">
+          <li>Long-trusted commercial vendor (O&amp;O since 1997)</li>
+          <li>"Recommended" presets minimize breakage risk</li>
+          <li>Every toggle individually reversible</li>
+          <li>Closed source — you trust the brand, not the code</li>
+        </ul>
+      </div>
+      <div class="card b">
+        <h3>Safety posture — Sparkle</h3>
+        <ul class="tick">
+          <li>Open source — anyone can audit what it does</li>
+          <li>Creates restore points; changes reversible</li>
+          <li>Removing apps/services can break features if careless</li>
+          <li>Newer, community-run; vet downloads from official site</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- VERDICT -->
+  <div class="panel" id="verdict">
+    <div class="verdict-grid">
+      <div class="card a">
+        <h3>Choose O&amp;O ShutUp10++ if…</h3>
+        <ul class="tick">
+          <li>Privacy is the <i>only</i> thing you want to touch</li>
+          <li>You want the deepest, most granular telemetry controls</li>
+          <li>You prefer a portable tool from an established vendor</li>
+          <li>You'll pay €19.90 for hands-off auto re-enforcement after updates</li>
+          <li>You don't want to risk removing apps or services</li>
+        </ul>
+      </div>
+      <div class="card b">
+        <h3>Choose Sparkle if…</h3>
+        <ul class="tick">
+          <li>You want one tool to debloat, speed up, clean <i>and</i> harden privacy</li>
+          <li>You value open source you can inspect</li>
+          <li>You're comfortable removing Edge/OneDrive/bloat</li>
+          <li>You want gaming/performance tweaks too</li>
+          <li>You like restore points + reversible one-click workflows</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card">
+      <h3>Bottom line</h3>
+      <p style="font-size:15px">They're not really rivals — they're complementary. <b>Run ShutUp10++ for surgical privacy</b>, then <b>use Sparkle for the debloat, cleanup and performance work</b> ShutUp10++ deliberately doesn't touch. If you must pick one and you only care about telemetry, ShutUp10++ wins on depth and trust. If you want the whole "tame my Windows install" job done in one open-source app, Sparkle is the better single choice.</p>
+    </div>
+  </div>
+
+  <div class="foot">
+    Sources:
+    <a href="https://www.oo-software.com/en/shutup10">oo-software.com/shutup10</a> ·
+    <a href="https://www.oo-software.com/en/ooshutup10premium">ShutUp10 Premium</a> ·
+    <a href="https://www.neowin.net/software/oo-shutup10-301076-released-with-new-premium-tier/">Neowin: Premium tier</a> ·
+    <a href="https://getsparkle.net/">getsparkle.net</a> ·
+    <a href="https://github.com/thedogecraft/sparkle">github.com/thedogecraft/sparkle</a> ·
+    <a href="https://docs.getsparkle.net/">Sparkle Docs</a>
+    <br>Scores are editorial estimates for visual comparison, not benchmarks. Generated May 2026.
+  </div>
+</div>
+
+<script>
+const tabs=document.querySelectorAll('.tab'),panels=document.querySelectorAll('.panel');
+const drawn={};
+tabs.forEach(t=>t.addEventListener('click',()=>{
+  tabs.forEach(x=>x.classList.remove('active'));panels.forEach(x=>x.classList.remove('active'));
+  t.classList.add('active');document.getElementById(t.dataset.t).classList.add('active');
+  if(t.dataset.t==='cost')drawCost();
+  if(t.dataset.t==='cap')drawRadar();
+}));
+const A='#5b9dff',B='#ffb454',grid='#2a2a2a',tick='#9a9a9a';
+function drawCost(){
+  if(drawn.cost)return;drawn.cost=1;
+  new Chart(document.getElementById('costChart'),{
+    type:'bar',
+    data:{labels:['Year 1','Year 3','Year 5'],
+      datasets:[
+        {label:'ShutUp10++ Free',data:[0,0,0],backgroundColor:A},
+        {label:'ShutUp10++ Premium',data:[22,22,22],backgroundColor:'#9ec3ff'},
+        {label:'Sparkle',data:[0,0,0],backgroundColor:B}
+      ]},
+    options:{responsive:true,maintainAspectRatio:false,
+      plugins:{legend:{labels:{color:tick}}},
+      scales:{x:{ticks:{color:tick},grid:{color:grid}},
+        y:{beginAtZero:true,ticks:{color:tick,callback:v=>'$'+v},grid:{color:grid},title:{display:true,text:'USD (approx)',color:tick}}}}
+  });
+}
+function drawRadar(){
+  if(drawn.radar)return;drawn.radar=1;
+  new Chart(document.getElementById('radarChart'),{
+    type:'radar',
+    data:{labels:['Privacy depth','Debloat','Performance tweaks','Cleanup','Reversibility','Ease of use','Auto-enforce','Open / auditable'],
+      datasets:[
+        {label:'O&O ShutUp10++',data:[95,20,10,5,90,90,95,40],borderColor:A,backgroundColor:'rgba(91,157,255,.18)',pointBackgroundColor:A},
+        {label:'Sparkle',data:[70,95,90,85,85,80,20,95],borderColor:B,backgroundColor:'rgba(255,180,84,.18)',pointBackgroundColor:B}
+      ]},
+    options:{responsive:true,maintainAspectRatio:false,
+      plugins:{legend:{labels:{color:tick}}},
+      scales:{r:{angleLines:{color:grid},grid:{color:grid},
+        pointLabels:{color:tick,font:{size:12}},
+        ticks:{color:tick,backdropColor:'transparent',stepSize:20},min:0,max:100}}}
+  });
+}
+</script>
+</body>
+</html>
