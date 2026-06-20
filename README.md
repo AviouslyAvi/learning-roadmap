@@ -30,10 +30,10 @@ For the full picture, see [00-foundation/](00-foundation/).
 ## Weekly log
 
 <!-- WEEKLY_LOG_START -->
+- **Week 2026-25** — Five-day Day/Productivity App sprint converging on a notebook-paper planner (first slice → Tasks UX overhaul → planner buildout → 28px lined-paper grid), with a Thursday Watch-Party interlude (Firefox/Zen support + crash hotfix). → [full digest](06-weekly/2026-25.md)
 - **Week 2026-24** — Two parallel ship-it arcs: RiffVault (Grab-Telegram-Bot) from initial commit to HTTPS-live on Netcup, and Ableton SDK's Articulation Roll from passthrough fix to a six-wave UX polish sprint. → [full digest](06-weekly/2026-24.md)
 - **Week 2026-23** — Five-day Ableton Extension SDK sprint: scaffolded the workspace, built `similar-samples` end-to-end, then spiked + verified + promoted + pushed the `keyswitch` extension to GitHub. → [full digest](06-weekly/2026-23.md)
 - **Week 2026-22** — Watch-Party shipping sprint (v0.5.0 → v0.8.1, seven releases) bracketed by a Terraform learning sprint (LocalStack S3 lab, Docker + general sandboxes, new cheatsheet). → [full digest](06-weekly/2026-22.md)
-- **Week 2026-21** — Inaugural week: scaffolded the public roadmap repo, four parallel General Research workspaces, and consolidated VPS / self-hosting research. → [full digest](06-weekly/2026-21.md)
 <!-- WEEKLY_LOG_END -->
 
 For older weeks, see [06-weekly/](06-weekly/).
