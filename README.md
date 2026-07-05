@@ -30,10 +30,10 @@ For the full picture, see [00-foundation/](00-foundation/).
 ## Weekly log
 
 <!-- WEEKLY_LOG_START -->
-- **Week 2026-27** — Two parallel builds: a browser music-theory learning suite (chord trainer → guided curriculum with interleaving + spacing) and remoter-recording reliability work (offline-first upload queue, clock-drift protection, 3 PRs merged). → [full digest](06-weekly/2026-27.md)
+- **Week 2026-27** — remoter-recording went from scaffold to live production (VPS1 coturn/TURN + VPS2 API/Postgres both online, PRs #1–#17), alongside an Ableton SDK REAPER port and a from-scratch browser music-theory learning suite. → [full digest](06-weekly/2026-27.md)
+- **Week 2026-26** — Two audio-tooling threads in parallel: remoter-recording born and taken from initial commit through full design docs to a VPS2 API skeleton, plus a serious Articulation Roll editor interaction-design pass. → [full digest](06-weekly/2026-26.md)
 - **Week 2026-25** — Six-day Day/Productivity App arc bending from "build the planner" (Mon–Fri: first slice → Tasks UX → planner buildout → 28px lined-paper grid) to "ship the planner" (Sat: Tasks ADHD redesign + Electron mac/Windows packaging + icon + CI + runtime-crash fix, 4 PRs), with a Thu Watch-Party interlude (Firefox/Zen + crash hotfix). → [full digest](06-weekly/2026-25.md)
 - **Week 2026-24** — Two parallel ship-it arcs: RiffVault (Grab-Telegram-Bot) from initial commit to HTTPS-live on Netcup, and Ableton SDK's Articulation Roll from passthrough fix to a six-wave UX polish sprint. → [full digest](06-weekly/2026-24.md)
-- **Week 2026-23** — Five-day Ableton Extension SDK sprint: scaffolded the workspace, built `similar-samples` end-to-end, then spiked + verified + promoted + pushed the `keyswitch` extension to GitHub. → [full digest](06-weekly/2026-23.md)
 <!-- WEEKLY_LOG_END -->
 
 For older weeks, see [06-weekly/](06-weekly/).
