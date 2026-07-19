@@ -30,10 +30,10 @@ For the full picture, see [00-foundation/](00-foundation/).
 ## Weekly log
 
 <!-- WEEKLY_LOG_START -->
+- **Week 2026-29** — remote-recording arced from hardening to go-live (`api.imavious.org`) to first Windows compile to shipping live presence (#33), while music tooling pivoted from the fretboard-tutor MIDI drill to cloning the iPlug2 plugin framework. → [full digest](06-weekly/2026-29.md)
 - **Week 2026-28** — remoter-recording carried the whole week: first interactive plugin testing → real libwebrtc/Opus media engine (#26) → full UI reskin (#29) → M2 go-live prep, closing with restoring the engine build a reskin merge had dropped. → [full digest](06-weekly/2026-28.md)
 - **Week 2026-27** — remoter-recording went from scaffold to live production (VPS1 coturn/TURN + VPS2 API/Postgres both online, PRs #1–#17), alongside an Ableton SDK REAPER port and a from-scratch browser music-theory learning suite. → [full digest](06-weekly/2026-27.md)
 - **Week 2026-26** — Two audio-tooling threads in parallel: remoter-recording born and taken from initial commit through full design docs to a VPS2 API skeleton, plus a serious Articulation Roll editor interaction-design pass. → [full digest](06-weekly/2026-26.md)
-- **Week 2026-25** — Six-day Day/Productivity App arc bending from "build the planner" (Mon–Fri: first slice → Tasks UX → planner buildout → 28px lined-paper grid) to "ship the planner" (Sat: Tasks ADHD redesign + Electron mac/Windows packaging + icon + CI + runtime-crash fix, 4 PRs), with a Thu Watch-Party interlude (Firefox/Zen + crash hotfix). → [full digest](06-weekly/2026-25.md)
 <!-- WEEKLY_LOG_END -->
 
 For older weeks, see [06-weekly/](06-weekly/).
