@@ -30,10 +30,10 @@ For the full picture, see [00-foundation/](00-foundation/).
 ## Weekly log
 
 <!-- WEEKLY_LOG_START -->
+- **Week 2026-30** — a single-project week: remote-recording went M1 clock_sync → M2 download pipeline → M3 mesh-talkback with a green libwebrtc go-live build (#39, #40), then hit a wall when live mesh audio broke and the pump fix had to be reverted. → [full digest](06-weekly/2026-30.md)
 - **Week 2026-29** — remote-recording arced from hardening to go-live (`api.imavious.org`) to first Windows compile to shipping live presence (#33), while music tooling pivoted from the fretboard-tutor MIDI drill to cloning the iPlug2 plugin framework. → [full digest](06-weekly/2026-29.md)
 - **Week 2026-28** — remoter-recording carried the whole week: first interactive plugin testing → real libwebrtc/Opus media engine (#26) → full UI reskin (#29) → M2 go-live prep, closing with restoring the engine build a reskin merge had dropped. → [full digest](06-weekly/2026-28.md)
 - **Week 2026-27** — remoter-recording went from scaffold to live production (VPS1 coturn/TURN + VPS2 API/Postgres both online, PRs #1–#17), alongside an Ableton SDK REAPER port and a from-scratch browser music-theory learning suite. → [full digest](06-weekly/2026-27.md)
-- **Week 2026-26** — Two audio-tooling threads in parallel: remoter-recording born and taken from initial commit through full design docs to a VPS2 API skeleton, plus a serious Articulation Roll editor interaction-design pass. → [full digest](06-weekly/2026-26.md)
 <!-- WEEKLY_LOG_END -->
 
 For older weeks, see [06-weekly/](06-weekly/).
