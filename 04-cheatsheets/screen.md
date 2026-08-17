@@ -1,7 +1,11 @@
 ---
 type: cheatsheet
 tool: screen
-updated: 2026-05-23
+updated: 2026-06-01
+autosync-database: [docs]
+Category: Technology
+Tag: [Guide/Reference]
+Date: 2026-05-23
 ---
 
 # screen — quick reference
