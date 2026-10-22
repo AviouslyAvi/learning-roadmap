@@ -45,7 +45,8 @@ A scheduled Claude Code task runs daily at 6:00 AM local time. It scans `~/Claud
 ## Active threads
 
 - 🏠 **ADHD Hub v2.1** — 4-DB Notion + additive Obsidian PARA built. User-side: Daily Notes plugin, Apple Shortcuts, n8n install, 3 Notion DB templates. See `05-handoffs/active/handoff-2026-05-22-adhd-hub-v2.md`.
+- 📚 **Notion sync** — One-way Obsidian → Notion via Share to NotionNext plugin. Conventions doc written; `screen.md` flagged as test note. User-side: create Notion integration, install plugin, configure, run first sync. See `00-foundation/notion-sync-conventions.md`.
 
 ## Last updated
 
-2026-05-22
+2026-05-25
