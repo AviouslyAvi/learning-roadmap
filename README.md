@@ -30,10 +30,10 @@ For the full picture, see [00-foundation/](00-foundation/).
 ## Weekly log
 
 <!-- WEEKLY_LOG_START -->
+- **Week 2026-45** — the Esoterica research track closed for good, then the focus moved to autonomous builds: a self-hosted CI gate, a PROGRESS.md queue and headless Mac/Windows loop drivers (with stop-on-red) for remote-recording. → [full digest](06-weekly/2026-45.md)
 - **Week 2026-44** — Premonition got close to shipping: installer choices, Developer ID signing and the first accepted notarization, plus live capture, a stereo WIDTH slider and the SOURCE/RENDER panel built in parallel worktrees. Lemon Squeezy rejected the store, so a Polar swap is planned, and on the side an Anytype autolinker with calendar sync and MatAnyone 2 matting went up. → [full digest](06-weekly/2026-44.md)
 - **Week 2026-43** — a Premonition launch sprint run across parallel Claude worktrees: licensing end to end, avious.co storefront, a full business plan and Windows CI/tester builds, plus a one-day Discord voice translator, Jam Room Stages 0–4 and a wasm-powered 3D portfolio room. → [full digest](06-weekly/2026-43.md)
 - **Week 2026-42** — Premonition VST took over: FL Studio Ogg-in-WAV samples fixed, a macOS release script, then a full "Mockup O" UI rebuild with FLAC export, plus a DAW-agnostic remote take design for remote-recording. → [full digest](06-weekly/2026-42.md)
-- **Week 2026-39** — a quiet week: one session on the Ableton Articulation Roll preview bridge (uncommitted), a brief client check-in, and nothing shipped. → [full digest](06-weekly/2026-39.md)
 <!-- WEEKLY_LOG_END -->
 
 For older weeks, see [06-weekly/](06-weekly/).
